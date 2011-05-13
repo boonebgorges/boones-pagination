@@ -40,7 +40,7 @@ class BBG_CPT_Pag {
 	/**
 	 * PHP 4 constructor
 	 *
-	 * @package BBG CPT Pag
+	 * @package Boone's Pagination
 	 * @since 1.0
 	 */
 	function bbg_cpt_pag() {
@@ -50,7 +50,7 @@ class BBG_CPT_Pag {
 	/**
 	 * PHP 5 constructor
 	 *
-	 * @package BBG CPT Pag
+	 * @package Boone's Pagination
 	 * @since 1.0
 	 */	
 	function __construct( $query = false ) {		
@@ -75,7 +75,7 @@ class BBG_CPT_Pag {
 	 * you use WP_Query to run your query (so that the data is not in $wp_query), you should
 	 * pass your query object along to setup_query().
 	 *
-	 * @package BBG CPT Pag
+	 * @package Boone's Pagination
 	 * @since 1.0
 	 */
 	function setup_query( $query = false ) {
@@ -99,7 +99,7 @@ class BBG_CPT_Pag {
 	 * You can either override this function in your own extended class, or filter the default
 	 * values. I have provided both options because I love you so very much.
 	 *
-	 * @package BBG CPT Pag
+	 * @package Boone's Pagination
 	 * @since 1.0
 	 */
 	function setup_get_keys() {
@@ -118,7 +118,7 @@ class BBG_CPT_Pag {
 	 *
 	 * Does some basic checks to ensure that the values are integers and that they are non-empty
 	 *
-	 * @package BBG CPT Pag
+	 * @package Boone's Pagination
 	 * @since 1.0
 	 */
 	function setup_get_params() {
@@ -144,7 +144,7 @@ class BBG_CPT_Pag {
 	/**
 	 * Get the total number of items out of the query
 	 *
-	 * @package BBG CPT Pag
+	 * @package Boone's Pagination
 	 * @since 1.0
 	 */
 	function setup_total_items() {
@@ -154,7 +154,7 @@ class BBG_CPT_Pag {
 	/**
 	 * Get the total number of pages out of the query
 	 *
-	 * @package BBG CPT Pag
+	 * @package Boone's Pagination
 	 * @since 1.0
 	 */
 	function setup_total_pages() {
@@ -167,7 +167,7 @@ class BBG_CPT_Pag {
 	 * Here's the math: Subtract one from the current page number; multiply times posts_per_page
 	 * to get the last post on the previous page; add one to get the start for this page.
 	 *
-	 * @package BBG CPT Pag
+	 * @package Boone's Pagination
 	 * @since 1.0
 	 *
 	 * @return int $start The start number
@@ -185,7 +185,7 @@ class BBG_CPT_Pag {
 	 * page (ie if the result is greater than the total number of docs), just use the total doc
 	 * count
 	 *
-	 * @package BBG CPT Pag
+	 * @package Boone's Pagination
 	 * @since 1.0
 	 *
 	 * @return int $end The start number
@@ -204,7 +204,7 @@ class BBG_CPT_Pag {
 	/**
 	 * Return or echo the "Viewing x-y of z" message
 	 *
-	 * @package BBG CPT Pag
+	 * @package Boone's Pagination
 	 * @since 1.0
 	 *
 	 * @param str $type Optional. 'echo' will echo the results, anything else will return them
@@ -225,7 +225,7 @@ class BBG_CPT_Pag {
 	/**
 	 * Return or echo the pagination links
 	 *
-	 * @package BBG CPT Pag
+	 * @package Boone's Pagination
 	 * @since 1.0
 	 *
 	 * @param str $type Optional. 'echo' will echo the results, anything else will return them
