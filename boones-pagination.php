@@ -104,6 +104,12 @@ class BBG_CPT_Pag {
 	 */
 	function setup_get_keys() {
 		$this->get_per_page_key = apply_filters( 'bbg_cpt_pag_per_page_key', 'per_page' );
+		
+		/**
+		 * I chose 'paged' as the default not because I like it - I don't - but because
+		 * other choices threatened to interfere with native WP functions. In particular,
+		 * 'page' is already used in the Dashboard area to signify a plugin settings page.
+		 */
 		$this->get_paged_key 	= apply_filters( 'bbg_cpt_pag_paged_key', 'paged' );
 	}
 	
