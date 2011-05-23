@@ -1,16 +1,5 @@
 <?php
 
-/*
-Plugin Name: Boone's Pagination
-Plugin URI: http://github.com/boonebgorges/boones-pagination
-Description: A handy, extensible pagination class for WordPress custom post type lists
-Version: 1.0
-Author: Boone B Gorges
-Author URI: http://boonebgorges.com
-Donate link: http://teleogistic.net/donate
-Licence: GPLv3
-*/
-
 if ( !class_exists( 'BBG_CPT_Pag' ) ) :
 
 class BBG_CPT_Pag {

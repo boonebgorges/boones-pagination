@@ -30,3 +30,11 @@ $pagination->setup_query( $my_query );`
 1. Then you can use all sorts of fun methods, like
 `$pagination->paginate_links();
 $pagination->currently_viewing_text();`
+
+== Changelog ==
+
+= 1.0.1 =
+* Updates plugin structure to keep plugin metadata in a separate loader file
+
+= 1.0 =
+* Initial release
