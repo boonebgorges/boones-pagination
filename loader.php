@@ -4,7 +4,7 @@
 Plugin Name: Boone's Pagination
 Plugin URI: http://github.com/boonebgorges/boones-pagination
 Description: A handy, extensible pagination class for WordPress custom post type lists
-Version: 1.0
+Version: 1.0.1
 Author: Boone B Gorges
 Author URI: http://boonebgorges.com
 Donate link: http://teleogistic.net/donate

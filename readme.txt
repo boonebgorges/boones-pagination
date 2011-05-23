@@ -3,7 +3,7 @@ Contributors: boonebgorges
 Tags: pagination, custom post types
 Requires at least: WordPress 3.1
 Tested up to: WordPress 3.2-beta
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 A handy, extensible class for paginating your custom post type lists.
 
