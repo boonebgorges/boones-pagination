@@ -38,6 +38,9 @@ $pagination->currently_viewing_text();`
 
 == Changelog ==
 
+= 1.1 =
+* Adds additional customization arguments. Thanks, r-a-y!
+
 = 1.0.1 =
 * Updates plugin structure to keep plugin metadata in a separate loader file
 
