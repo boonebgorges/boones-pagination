@@ -220,9 +220,12 @@ class BBG_CPT_Pag {
 	 * @param str $type Optional. 'echo' will echo the results, anything else will return them
 	 * @return str $page_links The pagination links
 	 */
-	function paginate_links( $type = 'echo' ) {	 
+	function paginate_links( $type = 'echo' ) {
+		$curr_url =  is_ssl() ? 'https://' : 'http://';
+		$curr_url .= $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
 		$page_links = paginate_links( array(
-			'base' 		=> add_query_arg( $this->get_paged_key, '%#%' ),
+			'base' 		=> add_query_arg( $this->get_paged_key, '%#%', trailingslashit( strtok( $curr_url, '?' ) ) ),
 			'format' 	=> '',
 			'prev_text' 	=> __( '&laquo;' ),
 			'next_text' 	=> __( '&raquo;' ),
