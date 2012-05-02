@@ -12,14 +12,19 @@ A handy, extensible class for paginating your custom post type lists.
 Here's how I recommend using the class.
 
 1. Either activate this plugin, or include the class in your own plugin file.
-1. When you start to render the page with the post list, instantiate the pagination class:
-`$pagination = new BBG_CPT_Pag;`
+1. When you start to render the page with the post list, instantiate the pagination class, using an argument array if you'd like:
+`$pargs = array(
+  'get_per_page_key' => 'perpage',
+  'get_paged_key'    => 'current_page',
+  'per_page'         => 15
+);
+$pagination = new BBG_CPT_Pag( $args );`
 1. When constructing your query arguments (for query_posts() or WP_Query), you can use the class to get your pagination arguments out of the $_GET parameters. For instance:
 `$args = array(
-...
-'posts_per_page' => $pagination->get_per_page,
-'paged' => $pagination->get_paged
-...
+  ...
+  'posts_per_page' => $pagination->get_per_page,
+  'paged' => $pagination->get_paged
+  ...
 );
 query_posts( $args );`
 1. After firing the query, use the `setup_query()` method to populate the rest of the class. If you used `query_posts()`, you don't need an argument:
